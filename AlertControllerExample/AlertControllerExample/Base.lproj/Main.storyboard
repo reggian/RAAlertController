@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtV-Hb-Oop">
+                                <rect key="frame" x="228" y="315" width="145" height="30"/>
+                                <state key="normal" title="Present Action Sheet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentActionSheet:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jwu-ly-uZi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOH-IK-E8b">
+                                <rect key="frame" x="256" y="255" width="89" height="30"/>
+                                <state key="normal" title="Present Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WeS-1i-vf3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VtV-Hb-Oop" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="MhL-XO-jha"/>
+                            <constraint firstItem="tOH-IK-E8b" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-30" id="OrC-AE-Pse"/>
+                            <constraint firstItem="VtV-Hb-Oop" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="30" id="WQw-qc-1S0"/>
+                            <constraint firstAttribute="centerX" secondItem="tOH-IK-E8b" secondAttribute="centerX" id="bFK-tM-oBU"/>
+                            <constraint firstItem="tOH-IK-E8b" firstAttribute="centerX" secondItem="VtV-Hb-Oop" secondAttribute="centerX" id="qkb-Sa-UHN"/>
+                            <constraint firstItem="VtV-Hb-Oop" firstAttribute="centerX" secondItem="tOH-IK-E8b" secondAttribute="centerX" id="rBR-yJ-NKB"/>
+                            <constraint firstItem="VtV-Hb-Oop" firstAttribute="top" secondItem="tOH-IK-E8b" secondAttribute="bottom" constant="86" id="zqf-Wt-cWq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rBR-yJ-NKB"/>
+                                <exclude reference="zqf-Wt-cWq"/>
+                                <exclude reference="qkb-Sa-UHN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
